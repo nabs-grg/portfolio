@@ -22,6 +22,10 @@
 			$header = $('#header'),
 			$all = $body.add($header);
 
+			// $("#contactform").click(function(){
+			// 	contactform.setAttribute('action', '//formspree.io/' + 'narbu.grg' + '@' + 'gmail' + '.' + 'com');
+			// });
+
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -235,3 +239,9 @@
 	});
 
 })(jQuery);
+
+
+
+
+    // var contactform =  document.getElementById('contactform');
+    // contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
