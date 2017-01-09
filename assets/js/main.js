@@ -26,6 +26,9 @@
 			// 	contactform.setAttribute('action', '//formspree.io/' + 'narbu.grg' + '@' + 'gmail' + '.' + 'com');
 			// });
 
+			$(".menu-trigger").click(function(){
+				$(".nav-menu").slideToggle();
+			})
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
