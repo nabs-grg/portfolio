@@ -747,6 +747,14 @@
 				background-image: url("images/arrow.svg");
 			}
 
+			@media screen and (max-width: 410px) {
+	    
+	    		input[type="reset"]{
+	        		margin-top: 10px;
+	        		margin-right: 10px;
+	    	}
+	}
+
 /* Form */
 
 	form {
@@ -1702,6 +1710,7 @@
 			top: 0;
 			height: 3em;
 			line-height: 3em;
+			/*overflow: hidden;*/
 		}
 
 			#header nav ul {
@@ -1723,7 +1732,16 @@
 						line-height: 3em;
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
+					}
 
+					/*added*/
+					.menu-trigger {
+						display: none;
+						position: absolute;
+						left: 1em;
+						top: 0;
+						height: 3em;
+						line-height: 3em;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -1746,9 +1764,32 @@
 						font-size: 1em;
 					}
 
-				#header nav {
-					display: none;
+					#header nav {
+						display: none;
+					}
+
+				#header .nav-menu ul li {
+					border-bottom: 2px solid #d5dce4;
+					display: block;
+					transition: 0.3s;
+					background-color: #fafafa;
+					border-left: none;
 				}
+
+					/*#header .nav-menu ul li:last-child {
+						border-bottom: none;relative
+					}*/
+
+						.menu-trigger {
+							/*display: block;
+							text-align: right;*/
+							/*float: left;*/
+							display: inline-block;
+							padding-right: 10px;
+							cursor: pointer;
+						}
+
+
 
 		}
 
